@@ -1,2 +1,46 @@
-# Learnify---Agentic-Tutor
-Short on time?! Instead of watching hour long lectures, Learnify watches, learns, and teaches in-depth with examples to understand concepts.  Learnify is an AI-powered lecture summarizer that watches YouTube videos, extracts the transcript, and turns long-form educational content into concise, structured, and insightful markdown summaries 
+# 🧠 Learnify – AI-Powered YouTube Lecture Summarizer
+
+> **Short on time? Learnify watches, learns, and teaches — so you don’t have to.**
+
+Stop watching hour-long lectures.  
+Let **Learnify** do it for you.
+
+This AI agent crew watches YouTube educational videos, extracts the transcript, summarizes key insights, and delivers a **structured, markdown-formatted summary** — ready for review, sharing, or archiving.
+
+🎯 Ideal for:  
+Students • Researchers • Developers • Lifelong Learners • Knowledge Workers
+
+---
+
+## 🚀 What It Does
+
+1. **📹 Input**: Provide any YouTube lecture URL  
+2. **🧩 Extract**: Fetches full transcript using `youtube-transcript-api`  
+3. **🧠 Summarize**: AI agent breaks it into chunks and summarizes key points  
+4. **📄 Format**: Another agent compiles everything into clean Markdown  
+5. **💾 Output**: Saves to `lecture_summary.md` — ready to read or export
+
+✅ No manual note-taking  
+✅ No skimming through videos  
+✅ Just deep, structured insights — delivered instantly
+
+---
+
+## 🛠️ Tech Stack
+
+- **Framework**: [CrewAI](https://www.crewai.com/) (Multi-Agent Orchestration)
+- **Transcript Tool**: `youtube-transcript-api`
+- **Agents**:  
+  - `YouTube Lecture Summarizer` – Extracts and distills key ideas  
+  - `Markdown Formatter` – Structures output beautifully
+- **Input Validation**: Pydantic + Custom Tool Schema
+- **Output**: Markdown (for Notion, Obsidian, GitHub, etc.)
+
+---
+
+## ▶️ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/learnify.git
+cd learnify
