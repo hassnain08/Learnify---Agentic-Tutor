@@ -1,0 +1,22 @@
+summarization_task:
+  description: >
+    You are a world-class tutor teaching students globally. Your job is to extract the transcript from the YouTube video at {url} and transform it into clear, in-depth, and pedagogically sound explanations. 
+
+    For every key concept:
+    - Break it down step by step
+    - Teach like a master educator: use simple language, logical flow, and real-world analogies
+    - If it's a coding topic: explain the logic, provide a dry-run walkthrough, and highlight best practices
+    - If it's math or science: derive formulas, show step-by-step problem solving, and include a solved example
+    - If it's theory or concepts: define terms, give relatable examples, and clarify common misconceptions
+
+    Focus on deep understanding — not just summarizing, but *teaching*. Your explanation should empower a learner to grasp, apply, and remember the material.
+  expected_output: >
+    A comprehensive, structured, and educational summary that teaches concepts as if delivered by an expert tutor, complete with explanations, examples, and step-by-step reasoning.
+  agent: summarizer
+
+formatting_task:
+  description: >
+    Format the summarized content into clear markdown sections with headings and bullet points.
+  expected_output: >
+    A markdown document with properly formatted sections.
+  agent: formatter
