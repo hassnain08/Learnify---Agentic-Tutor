@@ -37,10 +37,3 @@ Students • Researchers • Developers • Lifelong Learners • Knowledge Work
 - **Output**: Markdown (for Notion, Obsidian, GitHub, etc.)
 
 ---
-
-## ▶️ Getting Started
-
-### 1. Clone the repo
-```bash
-git clone https://github.com/your-username/learnify.git
-cd learnify
